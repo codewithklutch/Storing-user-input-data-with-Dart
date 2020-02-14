@@ -1,17 +1,25 @@
 import 'dart:io';
 
-// The main Dart program
+// The main Dart application
 void main() {
-// Calls the 'showName' function
-showName();
+  // Calls the function 'myName'
+  myName();
 }
 
-// Defines the function called 'showName'
-showName() {
-  // Ask the user for their name
-  print('What is your name?');
-  // Store the user input to a String type variable called 'name'
-  String name = stdin.readLineSync();
-  // Welcomes the user and displays user entered name data 
-  print('Welcome to the Dart Side, $name!');
+// Defines a function
+myName() {
+  // Declare and initialize 'name' variable as a string
+  String name = 'Stranger';
+
+  // Asks the user for input
+  print('Howdy $name, what\'s your name?'); 
+  
+  // Changes the 'name' variable to users input
+  name = stdin.readLineSync(); 
+
+  // Prints the new user name
+  print('Outstanding, $name!');
+
+  // Welcome to the Dart side
+  print('Welcome to the Dart Side!!!');
 }
